@@ -305,7 +305,6 @@ CREATE TABLE Drivers (
     employee_id INT,                               -- References Employees table for the driver’s employee record
     warehouse_id INT,                              -- References Warehouses table for the assigned warehouse
     vehicle_id INT,                                -- References Vehicles table for the assigned vehicle
-    route_id INT,                                  -- References Routes table for the assigned route
     driver_status_id INT,                          -- References DriverStatuses table for the current status of the driver
     driver_license VARCHAR(15) UNIQUE NOT NULL,    -- Unique driver license number for identification
     FOREIGN KEY (employee_id) REFERENCES Employees(employee_id),       -- Links to the Employees table
