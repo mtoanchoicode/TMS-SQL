@@ -310,7 +310,6 @@ CREATE TABLE Drivers (
     FOREIGN KEY (employee_id) REFERENCES Employees(employee_id),       -- Links to the Employees table
     FOREIGN KEY (warehouse_id) REFERENCES Warehouses(warehouse_id),     -- Links to the Warehouses table
     FOREIGN KEY (vehicle_id) REFERENCES Vehicles(vehicle_id),           -- Links to the Vehicles table
-    FOREIGN KEY (route_id) REFERENCES Routes(route_id),                 -- Links to the Routes table
     FOREIGN KEY (driver_status_id) REFERENCES DriverStatuses(driver_status_id) -- Links to the DriverStatuses table
 );
 
