@@ -503,5 +503,3 @@ CREATE TABLE ShipmentRouteDetails (
     FOREIGN KEY (route_id) REFERENCES Routes(route_id),           -- Links to the Routes table
     FOREIGN KEY (delivery_address_id) REFERENCES DeliveryAddresses(delivery_address_id) -- Links to the DeliveryAddresses table
 );
-
----------------------------------------------------------------------------------------
